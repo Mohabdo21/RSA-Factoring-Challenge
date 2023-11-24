@@ -9,4 +9,4 @@ Learning Objectives
 -   Understand the concept of RSA and its application in providing security.
 -   Learn what Prime Factorization is and how it is used in RSA.
 -   Understand why RSA is used and its significance in secure communication.
--   Learn how to implement RSA Factoring Challenge in the language of your choice.
+-   Learn how to implement RSA Factoring Challenge in Python.
