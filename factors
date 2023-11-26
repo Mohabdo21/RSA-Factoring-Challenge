@@ -83,8 +83,10 @@ def read_numbers_from_file(file_path):
                     ]
             return numbers
     except FileNotFoundError:
+        print("Error opening file")
         sys.exit(1)
     except ValueError:
+        print("Error: File contains non-integer values")
         sys.exit(1)
 
 
