@@ -74,13 +74,12 @@ def read_numbers_from_file(file_path):
         list of int: A list of numbers read from the file.
 
     """
-    try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            numbers = [
-                    int(line.strip())
-                    for line in file
-                    if line.strip().isdigit() and int(line.strip()) > 1
-                    ]
+    with open(file_path, 'r', encoding='utf-8') as file:
+        numbers = [
+                int(line.strip())
+                for line in file
+                if line.strip().isdigit() and int(line.strip()) > 1
+                ]
         return numbers
 
 
