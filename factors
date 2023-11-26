@@ -73,9 +73,6 @@ def read_numbers_from_file(file_path):
     Returns:
         list of int: A list of numbers read from the file.
 
-    Raises:
-        FileNotFoundError: If the file does not exist.
-        ValueError: If the file contains non-integer values.
     """
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -85,12 +82,6 @@ def read_numbers_from_file(file_path):
                     if line.strip().isdigit() and int(line.strip()) > 1
                     ]
         return numbers
-    except FileNotFoundError:
-        print("Error opening file")
-        sys.exit(1)
-    except ValueError:
-        print("Error: File contains non-integer values")
-        sys.exit(1)
 
 
 def factorize_numbers(numbers):
